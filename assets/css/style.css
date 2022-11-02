@@ -44,6 +44,16 @@
   
     --white: hsl(0, 0%, 100%);
     --accent: hsl(229, 76%, 66%);
+    --background-primary: hsl(0, 0%, 100%);
+    --background-secondary: hsl(0, 0%, 97%);
+  
+    --action-primary: hsl(214, 32%, 91%);
+    --action-secondary: hsl(210, 38%, 95%);
+  
+    --foreground-primary: hsl(218, 23%, 23%);
+    --foreground-secondary: hsl(216, 15%, 52%);
+    --foreground-tertiary: hsl(214, 20%, 69%);
+    
   
     /**
      * typography 
@@ -77,7 +87,7 @@
   
   li { list-style: none; }
   
-  img, button { display: inline-block; }
+  img, button { display: block; }
   
   a, span { display: inline-block; }
   
@@ -95,6 +105,10 @@
   }
 
   /* #HEADER */
+
+  body {
+    background-color: hsl(0, 55%, 91%);
+  }
   
   .wrapper {
     display: flex;
@@ -127,3 +141,45 @@
     transform: translateY(-1px);
     color: var(--accent);
   }
+
+  /* #HERO */
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title {
+    font-size: var(--fs-1);
+    margin-bottom: 20px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+  }
+
+  .form input {
+    padding: 8px 120px 8px 5px;
+    color: var(--foreground-secondary);
+    border: 1px solid black;
+    border-radius: 2px;
+  }
+
+  .btn {
+    background-color: rgb(255, 192, 20);
+    margin-top: 10px;
+    font-size: var(--fs-3);
+    padding: 5px 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: 0.45s ease-in;
+ }
+
+ .btn:hover {
+    background-color: rgb(236, 151, 54);;
+ }
