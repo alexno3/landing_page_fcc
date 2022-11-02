@@ -139,7 +139,7 @@
 
   .navbar a:hover {
     transform: translateY(-1px);
-    color: var(--accent);
+    color: rgb(236, 151, 54);
   }
 
   /* #HERO */
@@ -181,5 +181,5 @@
  }
 
  .btn:hover {
-    background-color: rgb(236, 151, 54);;
+    background-color: rgb(236, 151, 54);
  }
